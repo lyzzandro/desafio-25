@@ -54,17 +54,19 @@ h2 {
 }
 
 .conteudo {
-    width: 50%;
+    width: 45%;
     padding-right: 64px;
 }
 
-.banner{
-    width: 50%;
+.banner {
+    width: 55%;
     height: 100%;
-    background: url(../image/capa-banner.jpg);
+    background: url(../image/capa-banner.jpg) no-repeat;
+    background-size: cover;
 }
 
-.button-inicio, .button-inicio-2 {
+.button-inicio,
+.button-inicio-2 {
     font-family: var(--Montserrat);
     background-color: #272727;
     color: var(--branco);
@@ -76,19 +78,51 @@ h2 {
     line-height: 22px;
 }
 
-.button-inicio-2{
+.button-inicio-2 {
     color: var(--preto);
     background-color: transparent;
     text-decoration-line: underline;
 }
 
-.button-inicio:hover{
+.button-inicio:hover {
     background-color: var(--preto-secundario);
     cursor: pointer;
 }
 
-.button-inicio-2:hover{
+.button-inicio-2:hover {
     color: var(--preto-secundario);
     cursor: pointer;
 }
 
+@media (max-width: 900px) {
+    .inicio {
+        height: 300px;
+    }
+
+    h1 {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    h2 {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+    }
+
+    .button-inicio,
+    .button-inicio-2 {
+        width: 147px;
+        height: 31px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .conteudo {
+        width: 100%;
+        padding: 0;
+    }
+    .banner {
+        display: none;
+    }
+}
