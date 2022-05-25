@@ -1,14 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
 :root {
     --cinza: #f9f9f9;
     --branco: #ffffff;
     --preto: #272727;
+    --preto-secundario: #4a4a4a;
+    --cinza-secundario: #797979;
     --Montserrat: "Montserrat", sans-serif;
 }
 
@@ -16,8 +19,76 @@ body {
     background-color: var(--cinza);
 }
 
+h1 {
+    font-family: var(--Montserrat);
+    color: var(--preto);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    margin-bottom: 16px;
+}
+
+h2 {
+    font-family: var(--Montserrat);
+    color: var(--cinza-secundario);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    margin-bottom: 32px;
+}
+
 .container {
     margin: 0 auto;
     width: 90%;
     max-width: 1280px;
 }
+
+.inicio-container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.inicio {
+    height: 850px;
+}
+
+.conteudo {
+    width: 50%;
+    padding-right: 64px;
+}
+
+.banner{
+    width: 50%;
+    height: 100%;
+    background: url(/assets/image/capa-banner.jpg);
+}
+
+.button-inicio, .button-inicio-2 {
+    font-family: var(--Montserrat);
+    background-color: #272727;
+    color: var(--branco);
+    border: none;
+    width: 225px;
+    height: 46px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.button-inicio-2{
+    color: var(--preto);
+    background-color: transparent;
+    text-decoration-line: underline;
+}
+
+.button-inicio:hover{
+    background-color: var(--preto-secundario);
+    cursor: pointer;
+}
+
+.button-inicio-2:hover{
+    color: var(--preto-secundario);
+    cursor: pointer;
+}
+
