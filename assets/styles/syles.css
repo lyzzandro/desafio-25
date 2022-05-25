@@ -94,6 +94,76 @@ h2 {
     cursor: pointer;
 }
 
+/*DESIGN MINIMALISTA*/
+.design-minimalista {
+    height: 700px;
+    background-color: var(--branco);
+}
+
+.design-minimalista-container {
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.img-design {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.img-design img {
+    width: 85%;
+}
+
+.card-design {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.card-design a {
+    font-family: var(--Montserrat);
+    color: var(--preto);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.card-design a:hover {
+    color: var(--preto-secundario);
+}
+
+.conteudo-card {
+    align-self: end;
+}
+
+.card {
+    padding: 20px 30px;
+    width: 100%;
+    background-color: var(--preto);
+    margin-bottom: 24px;
+}
+
+.card h3 {
+    font-family: var(--Montserrat);
+    color: var(--branco);
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    padding-bottom: 20px;
+}
+
+.card p {
+    font-family: var(--Montserrat);
+    color: var(--branco);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160%;
+}
+
+/*RESPONSIVIDADE*/
 @media (max-width: 900px) {
     .inicio {
         height: 300px;
@@ -124,5 +194,42 @@ h2 {
     }
     .banner {
         display: none;
+    }
+
+    /*DESIGN MINIMALISTA RESPONSIVIDADE*/
+    .img-design {
+        display: none;
+    }
+
+    .design-minimalista {
+        height: 300px;
+    }
+    .card {
+        padding: 16px;
+        margin-bottom: 16px;
+    }
+    .card-design {
+        width: 100%;
+    }
+
+    .conteudo-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-design a {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .card h3 {
+        font-size: 24px;
+        line-height: 29px;
+        padding-bottom: 16px;
+    }
+
+    .card p {
+        font-size: 14px;
     }
 }
