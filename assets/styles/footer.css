@@ -1,1 +1,92 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+
+:root {
+    --cinza: #f9f9f9;
+    --branco: #ffffff;
+    --preto: #272727;
+    --preto-secundario: #4a4a4a;
+    --cinza-secundario: #797979;
+    --Montserrat: "Montserrat", sans-serif;
+}
+
+.footer {
+    display: flex;
+    height: 320px;
+    align-items: center;
+}
+
+.footer-contanier {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.title-footer {
+    font-family: var(--Montserrat);
+    color: var(--preto);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    padding-bottom: 21px;
+}
+
+.produtos,
+.mais-informacoes,
+.redes-sociais {
+    display: flex;
+    flex-direction: column;
+    padding: 0 100px 0 0;
+}
+
+.opcoes-footer {
+    font-family: var(--Montserrat);
+    color: var(--preto);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration: none;
+    margin-bottom: 16px;
+}
+
+.opcoes-footer:hover {
+    color: var(--preto-secundario);
+    text-decoration: underline;
+}
+
+.img-logo-footer {
+    align-self: flex-start;
+    margin-right: 80px;
+}
+
+/*RESPONSIVIDADE*/
+@media (max-width: 900px) {
+    .footer {
+        height: auto;
+    }
+
+    .footer-contanier {
+        padding-top: 38px;
+    }
+
+    .produtos,
+    .mais-informacoes,
+    .redes-sociais {
+        padding: 0 70px 30px 0;
+    }
+
+    .img-logo-footer {
+        display: none;
+    }
+
+    .title-footer {
+        font-size: 14px;
+        line-height: 17px;
+        padding-bottom: 6px;
+    }
+
+    .opcoes-footer {
+        font-size: 12px;
+        line-height: 15px;
+        margin-bottom: 3px;
+    }
+}
