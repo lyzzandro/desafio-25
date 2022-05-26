@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./assets/styles/nav.css">
     <link rel="stylesheet" href="./assets/styles/syles.css">
     <link rel="stylesheet" href="./assets/styles/footer.css">
+    <link rel="shortcut icon" href="./assets/image/favicon.ico">
     <title>HOMEYOU</title>
 </head>
 
@@ -25,9 +26,9 @@
 
             <div class="menu">
                 <ul class="menu-itens">
-                    <li class="links"><a href="">Início</a></li>
-                    <li class="links"><a href="">Galeria</a></li>
-                    <li class="links"><a href="">Contato</a></li>
+                    <li class="links"><a href="#inicio">Início</a></li>
+                    <li class="links"><a href="#galeria">Galeria</a></li>
+                    <li class="links"><a href="#contato">Contato</a></li>
                 </ul>
                 <img class="icons" src="./assets/image/fi_user.svg" alt="">
                 <img class="icons" src="./assets/image/fi_heart.svg" alt="">
@@ -39,7 +40,7 @@
         </div>
     </nav>
 
-    <section class="inicio">
+    <section class="inicio" id="inicio">
         <div class="container inicio-container">
             <div class="conteudo">
                 <h1>
@@ -54,8 +55,8 @@
                 </h2>
 
                 <div class="buttons">
-                    <button class="button-inicio">Entre em contato</button>
-                    <button class="button-inicio-2">Mais sobre nós</button>
+                    <a href="#contato"><button class="button-inicio">Entre em contato</button></a>
+                    <a href="#sobre"><button class="button-inicio-2">Mais sobre nós</button></a>
                 </div>
 
             </div>
@@ -63,7 +64,7 @@
         </div>
     </section>
 
-    <section class="design-minimalista">
+    <section class="design-minimalista" id="sobre">
         <div class="container design-minimalista-container">
 
             <div class="img-design">
@@ -80,13 +81,13 @@
                             para manter a casa sempre com um estilo clean e suave.
                         </p>
                     </div>
-                    <a href="#">Quero saber mais sobre os designs</a>
+                    <a href="#galeria">Quero saber mais sobre os designs</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="galeria">
+    <section class="galeria" id="galeria">
         <div class="container galeria-container">
             <h2>Galeria</h2>
             <p>
@@ -106,7 +107,7 @@
         </div>
     </section>
 
-    <section class="orcamento">
+    <section class="orcamento" id="contato">
         <div class="container orcamento-container">
             <h2>Orçamento</h2>
             <p>
@@ -123,21 +124,21 @@
             <img class="img-logo img-logo-footer" src="./assets/image/home.jpg" alt="">
             <div class="produtos">
                 <p class="title-footer">Produtos</p>
-                <a class="opcoes-footer" href="">Mobilia</a>
-                <a class="opcoes-footer" href="">Segurança</a>
-                <a class="opcoes-footer" href="">Design Interior</a>
+                <a class="opcoes-footer" href="#">Mobilia</a>
+                <a class="opcoes-footer" href="#">Segurança</a>
+                <a class="opcoes-footer" href="#">Design Interior</a>
             </div>
             <div class="mais-informacoes">
                 <p class="title-footer">Mais Informações</p>
-                <a class="opcoes-footer" href="">Contato</a>
-                <a class="opcoes-footer" href="">Sobre Nós</a>
-                <a class="opcoes-footer" href="">Termos e Condições</a>
+                <a class="opcoes-footer" href="#">Contato</a>
+                <a class="opcoes-footer" href="#">Sobre Nós</a>
+                <a class="opcoes-footer" href="#">Termos e Condições</a>
             </div>
             <div class="redes-sociais">
                 <p class="title-footer">Redes Sociais</p>
-                <a class="opcoes-footer" href="">Pinterest</a>
-                <a class="opcoes-footer" href="">Facebook</a>
-                <a class="opcoes-footer" href="">Instagram</a>
+                <a class="opcoes-footer" href="#">Pinterest</a>
+                <a class="opcoes-footer" href="#">Facebook</a>
+                <a class="opcoes-footer" href="#">Instagram</a>
             </div>
         </div>
     </footer>

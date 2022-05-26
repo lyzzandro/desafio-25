@@ -86,9 +86,9 @@
 }
 
 @media (max-width: 900px) {
-
     .nav {
         height: 72px;
+        position: fixed;
     }
 
     .nome-logo {
