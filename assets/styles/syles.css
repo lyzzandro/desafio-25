@@ -209,15 +209,15 @@ h2 {
 }
 
 .item1 {
-    background: url(/assets/image/img1.jpg) center center no-repeat;
+    background: url(../image/img1.jpg) center center no-repeat;
 }
 
 .item2 {
-    background: url(/assets/image/img2.jpg) center center no-repeat;
+    background: url(../image/img2.jpg) center center no-repeat;
 }
 
 .item3 {
-    background: url(/assets/image/img3.jpg) center center no-repeat;
+    background: url(../image/img3.jpg) center center no-repeat;
 }
 
 /*RESPONSIVIDADE*/
