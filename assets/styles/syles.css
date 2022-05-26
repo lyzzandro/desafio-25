@@ -164,17 +164,15 @@ h2 {
 }
 
 /*GALERIA*/
-.galeria-container {
+.galeria-container,
+.orcamento-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.galeria {
-    height: 800px;
-}
-
-.galeria-container h2 {
+.galeria-container h2,
+.orcamento-container h2 {
     color: var(--preto);
     font-weight: 600;
     font-size: 32px;
@@ -182,7 +180,8 @@ h2 {
     margin: 55px 0 19px 0;
 }
 
-.galeria-container p {
+.galeria-container p,
+.orcamento-container p {
     font-family: var(--Montserrat);
     color: var(--cinza-secundario);
     font-weight: 500;
@@ -197,6 +196,7 @@ h2 {
     display: flex;
     flex-flow: wrap;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .itens-galeria {
@@ -218,6 +218,24 @@ h2 {
 
 .item3 {
     background: url(../image/img3.jpg) center center no-repeat;
+}
+
+/*ORCAMENTO*/
+.orcamento {
+    background-color: var(--branco);
+}
+
+.button-orcamento {
+    background-color: transparent;
+    color: var(--preto);
+    border: 1px solid var(--preto);
+    margin-bottom: 70px;
+}
+
+.button-orcamento:hover {
+    background-color: transparent;
+    color: var(--preto-secundario);
+    border: 1px solid var(--preto-secundario);
 }
 
 /*RESPONSIVIDADE*/
@@ -291,21 +309,23 @@ h2 {
     }
 
     /*GALERIA RESPONSIVIDADE*/
-    .galeria-container h2 {
+    .galeria-container h2,
+    .orcamento h2 {
         color: var(--preto);
         font-weight: 600;
         font-size: 24px;
         line-height: 39px;
-        margin: 55px 0 19px 0;
+        margin: 40px 0 16px 0;
     }
 
-    .galeria-container p {
+    .galeria-container p,
+    .orcamento p {
         width: 100%;
         font-size: 14px;
         line-height: 140%;
     }
 
-    .img-galeria{
+    .img-galeria {
         width: 100%;
     }
 
@@ -318,7 +338,20 @@ h2 {
         margin: 0 10px;
     }
 
-    .itens-galeria{
+    .itens-galeria {
         margin: 0 0 24px 0;
+    }
+
+    .buttons {
+        display: flex;
+        width: 100%;
+    }
+
+    .button-orcamento {
+        width: 100%;
+        height: 36px;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 40px;
     }
 }
